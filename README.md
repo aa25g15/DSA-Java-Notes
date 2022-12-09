@@ -39,13 +39,29 @@ if(ch >= '0' && ch <= '9'){
 }
 ```
 
-### Strings are Immutable, Is A Class Not A Primitive Type and Using StringBuilder
+### Strings are Immutable, Are Classes And Not Primitive Type and Using StringBuilder
 Remember that strings are immutable in Java and are not native types but Classes, you have to use StringBuilder class to create mutable character sequence
 ```java
 StringBuilder sb = new StringBuilder(); // Can even mention initial capacity
 sb.append("abhinav"); // Unlike many other classes, it is append and not add
 sb.append('d');
 String result = sb.toString(); // "abhinavd"
+```
+
+### HashSet to ArrayList
+```java
+HashSet<Integer> solSet = new HashSet<>();
+solSet.add(1);
+solSet.add(2);
+solSet.add(3);
+List<Integer> list = new ArrayList<>(solSet);
+```
+
+### Arrays.asList Method
+```java
+import java.util.Arrays;
+
+Arrays.asList(1, 2, 5, 3, 7); // Return a new fixed size List view of the array or arguments passed
 ```
 
 ## Data Structures
