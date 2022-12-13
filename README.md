@@ -70,14 +70,24 @@ Arrays.asList(1, 2, 5, 3, 7); // Return a new fixed size List view of the array 
 
 ### Arrays
 ```java
-String[] = new String[10];
+String[] arrayString = new String[10];
 LinkedList<Integer>[] = new LinkedList<Integer>[10]; // XXXXXX Will throw error about generic array creation
 ```
 
 ### Heaps
 ```
-PriorityQueue minHeap = new PriorityQueue<>(10); // 10 is initial capacity
-PriorityQueue maxHeap = new PriorityQueue<>(10, Comparator.reverseOrder());
+PriorityQueue<Integer> minHeap = new PriorityQueue<>(10); // 10 is initial capacity
+PriorityQueue<Integer> maxHeap = new PriorityQueue<>(10, Comparator.reverseOrder());
+```
+
+### Stacks
+```
+Stack<Integer> stack = new Stack<>();
+```
+
+### Sets
+```
+HashSet<Integer> solSet = new HashSet<>();
 ```
 
 ## Deep Stuff
