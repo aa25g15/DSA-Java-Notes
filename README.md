@@ -27,6 +27,14 @@ Character.toUpperCase('a'); // output - 'A'
 "AbhInaV".toUpperCase(); // output - 'ABHINAV'
 ```
 
+### ArrayList to Array
+```java
+ArrayList<Integer> solList = new ArrayList<>();
+solList.add(1);
+solList.add(3);
+int[] solArr = solList.toArray(new int[solList.size()]); // {1, 3}
+```
+
 ## Easy to Forget Things And Methods
 
 ### Heap poll() method is faster than remove() method for removing the root of the heap
@@ -66,6 +74,11 @@ import java.util.Arrays;
 Arrays.asList(1, 2, 5, 3, 7); // Return a new fixed size List view of the array or arguments passed
 ```
 
+### Declaring Nested Array
+```java
+int[][] arr = new int[10][]; // arr is an array of length 10 which has integer arrays as elements inside it
+```
+
 ## Data Structures
 
 ### Arrays
@@ -88,6 +101,19 @@ Stack<Integer> stack = new Stack<>();
 ### Sets
 ```
 HashSet<Integer> solSet = new HashSet<>();
+```
+
+### Strings
+* Remember that strings are objects in Java!!!!!
+* The String is immutable, so its value cannot be changed. If the String doesn't remain immutable, any hacker can cause a security issue in the application by changing the reference value.
+* You have to use a string builder to generate mutable strings
+
+```java
+String s = "abhinav";
+StringBuilder sb = new StringBuilder();
+sb.append(s.charAt(0));
+sb.append(s.charAt(1));
+System.out.println(sb.toString()); // output - "ab"
 ```
 
 ## Deep Stuff
